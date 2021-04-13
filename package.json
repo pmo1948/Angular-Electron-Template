@@ -1,5 +1,5 @@
 {
-  "name": "gui-poc",
+  "name": "ng-electron-template",
   "version": "0.0.0",
   "main": "main.js",
   "scripts": {
