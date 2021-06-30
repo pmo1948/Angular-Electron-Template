@@ -1,27 +1,16 @@
-# GuiPoc
+# Angular Electron Template
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.8.
 
-## Development server
+## Setup
+To set up your own project, fork this repository into your own. Change the `"name"` field in the [package.json](./package.json).
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Developing
+To run the program in dev mode with electron, run `npm run start:electron`. This will run the program in hot-reload, so you can see your changes as you go.
 
-## Code scaffolding
+## Release
+For your first release, run `npm run release -- --first-release`. 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+For second and later releases, run `npm run release` or `release:minor`, `release:patch`, or `release:major` to force a version type.
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Running these scripts will auto-increment the version, add well as update the [changelog.md](./CHANGELOG.MD) with the proper changes.
