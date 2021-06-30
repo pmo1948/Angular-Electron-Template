@@ -17,7 +17,7 @@
     "release:minor": "standard-version --release-as minor",
     "release:patch": "standard-version --release-as patch",
     "release:major": "standard-version --release-as major",
-    "format:all" :"pretty-quick",
+    "format:all": "pretty-quick",
     "format:fix": "pretty-quick --staged",
     "format:check": "prettier --config ./.prettierrc --list-different \"src/{app, environments, assets}/**/*{.ts,.js,.json,.css,.scss,.html}\""
   },
@@ -56,7 +56,7 @@
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "^1.5.0",
     "npm-run-all": "^4.1.5",
-    "prettier":"^2.2.1",
+    "prettier": "^2.2.1",
     "pretty-quick": "^3.1.0",
     "protractor": "~7.0.0",
     "standard-version": "^9.2.0",
