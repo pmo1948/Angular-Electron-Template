@@ -13,6 +13,9 @@ const bodyless = (request: HttpRequest<any>) => {
 // add responses here
 
 export const selectHandler = (request: HttpRequest<any>) => {
+  if (request.url.includes('config.json')) {
+    return null;
+  }
   const url = new URL(request.url)?.pathname;
   // add other paths to mock here
   if (url.includes('/send-action')) {
