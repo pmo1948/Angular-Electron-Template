@@ -5,11 +5,13 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "start:mock":"ng serve --configuration=mock",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
     "start:electron": "npm-run-all -p electron:serve start",
+    "start:electron:mock": "npm-run-all -p electron:serve start:mock",
     "electron:serve-tsc": "tsc -p tsconfig.serve.json",
     "electron:serve": "wait-on tcp:4200 && npm run electron:serve-tsc && npx electron . --serve",
     "postinstall": "husky install",
